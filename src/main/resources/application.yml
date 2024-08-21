@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: websocket
+  spring:
+    datasource:
+      url: jdbc:mysql://localhost:3306/ws
+      username: root
+      password: 58155815
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          socket: DEBUG
+        messaging:
+          simp: DEBUG
